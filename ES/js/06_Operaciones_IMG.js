@@ -1,13 +1,13 @@
 // ********************************************************************************
-// OPERACIONES CON IM罣ENES
+// OPERACIONES CON IM脕GENES
 // ********************************************************************************
-// Existen funciones para realizar operaciones matem醫icas con las im醙enes
+// Existen funciones para realizar operaciones matem谩ticas con las im谩genes
 // ********************************************************************************
 
 // Traemos un shape
-var shape = ee.FeatureCollection('users/dmlmont/Taller_GEE_Univalle/SHP');
+var shape = ee.FeatureCollection('path/SHP');
 
-// Opciones de visualizaci髇 RGB
+// Opciones de visualizaci贸n RGB
 var s2_RGB = {
   bands: ["B4","B3","B2"],
   min: 0,
@@ -24,16 +24,16 @@ var s2_2019 = ee.Image("COPERNICUS/S2/20190102T153619_20190102T153616_T18NUJ");
 Map.addLayer(s2_2019,s2_RGB,"2019");
 
 // ********************************************************************************
-// 蚇DICES DE VEGETACI覰
+// 脥NDICES DE VEGETACI脫N
 // ********************************************************************************
-// Los 蚽dices de Vegetaci髇 (IV) se calculan sobre im醙enes
+// Los 脥ndices de Vegetaci贸n (IV) se calculan sobre im谩genes
 // Hay varias maneras de calcularlos
 // Calculadora Raster: usar funciones .add("Imagen"), .subtract("Imagen"), .divide("Imagen")...
-// Expresiones: funci髇 .expression("Expresi髇 matem醫ica","Diccionario de expresi髇")
+// Expresiones: funci贸n .expression("Expresi贸n matem谩tica","Diccionario de expresi贸n")
 // Funciones predeterminadas: .normalizedDifference(["Primera Banda","Segunda Banda"])
 // ********************************************************************************
 
-// Opciones de visualizaci髇 NDVI
+// Opciones de visualizaci贸n NDVI
 var s2_NDVI = {
   min: 0,
   max: 1,
@@ -68,41 +68,41 @@ Map.addLayer(ndvi_diff,s2_NDVI,"Diferencia NDVI");
 // ********************************************************************************
 // REDUCTORES
 // ********************************************************************************
-// Los reductores convierten una colecci髇 de im醙enes a una sola imagen con una estad韘tica
+// Los reductores convierten una colecci贸n de im谩genes a una sola imagen con una estad铆stica
 // Se pueden hacer con la imagen completa o por regiones
 // Se utilizan las funciones .reducer("Reductor")
-// En el "Reductor" se utiliza ee.Reducer."Estad韘tica"()
+// En el "Reductor" se utiliza ee.Reducer."Estad铆stica"()
 // ee.Reducer.median()
 // ee.Reducer.mean()
 // ee.Reducer.max()
 // ee.Reducer.min(), etc...
 // ********************************************************************************
 
-// Traemos una colecci髇 de Sentinel-2 filtrada por fecha, n鷐ero de 髍bita, porcentaje de nubosidad y ubicaci髇
+// Traemos una colecci贸n de Sentinel-2 filtrada por fecha, n煤mero de 贸rbita, porcentaje de nubosidad y ubicaci贸n
 var s2 = ee.ImageCollection("COPERNICUS/S2")
   .filterDate("2018-01-01","2018-12-31")
   .filter(ee.Filter.eq('SENSING_ORBIT_NUMBER',68))
   .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE',20))
   .filterBounds(shape);
 
-// Reducimos la colecci髇 a una imagen correspondiente a la media y otra a la mediana
-// Cada banda es reducida a estas estad韘ticas
+// Reducimos la colecci贸n a una imagen correspondiente a la media y otra a la mediana
+// Cada banda es reducida a estas estad铆sticas
 var mean = s2.reduce(ee.Reducer.mean());
 var median = s2.reduce(ee.Reducer.median());
 
 // Se imprimen los nuevos nombres de las bandas
-// Estos cambian y las opciones de visualizaci髇 hay que cambiarlas
+// Estos cambian y las opciones de visualizaci贸n hay que cambiarlas
 print("NUEVOS NOMBRES BANDAS MEDIA",mean.bandNames());
 print("NUEVOS NOMBRES BANDAS MEDIANA",median.bandNames());
 
-// Opciones de visualizaci髇 RGB para la imagen reducida en media
+// Opciones de visualizaci贸n RGB para la imagen reducida en media
 var s2_RGB_mean = {
   bands: ["B4_mean","B3_mean","B2_mean"],
   min: 0,
   max: 3000
 };
 
-// Opciones de visualizaci髇 RGB para la imagen reducida en mediana
+// Opciones de visualizaci贸n RGB para la imagen reducida en mediana
 var s2_RGB_median = {
   bands: ["B4_median","B3_median","B2_median"],
   min: 0,
@@ -116,19 +116,19 @@ Map.addLayer(median,s2_RGB_median,"Median 2018");
 // ********************************************************************************
 // REDUCTORES POR REGION
 // ********************************************************************************
-// Funciona como Estad韘ticas Zonales
+// Funciona como Estad铆sticas Zonales
 // Se realizan sobre una imagen y un shape base
-// Se utilizan las funciones "Imagen".reduceRegions("Opciones de reducci髇")
-// En las opciones de reducci髇 se utiliza la variable "collection", la cual es el shape
+// Se utilizan las funciones "Imagen".reduceRegions("Opciones de reducci贸n")
+// En las opciones de reducci贸n se utiliza la variable "collection", la cual es el shape
 // La variable "reducer", que es el reductor:
 // ee.Reducer.median()
 // ee.Reducer.mean()
 // ee.Reducer.max()
 // ee.Reducer.min(), etc...
-// Y la variable "scale", que es el tama駉 de pixel del cual se reduce
+// Y la variable "scale", que es el tama帽o de pixel del cual se reduce
 // ********************************************************************************
 
-// Se reduce a la media la imagen NDVI del 2019 en las geometr韆s del shape "shape"
+// Se reduce a la media la imagen NDVI del 2019 en las geometr铆as del shape "shape"
 var mean_regions = ndvi_2019.reduceRegions({
   collection: shape,
   reducer: ee.Reducer.mean(),
