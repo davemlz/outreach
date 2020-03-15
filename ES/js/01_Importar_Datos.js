@@ -8,13 +8,13 @@
 // Seleccionar todos los archivos que representan el shapefile
 // Extensiones soportadas (.shx, .dbf, .cpg, .fix, .prj, .qix, .sbn, .shp, .shp.xml)
 // Asignar un nombre
-// En la pestaÒa Tasks aparecer· el estado del archivo shapefile subido
+// En la pesta√±a Tasks aparecer√° el estado del archivo shapefile subido
 // ********************************************************************************
 
 // Guardar shapefile en una variable "shape"
-var shape = ee.FeatureCollection('users/dmlmont/Taller_GEE_Univalle/SHP');
+var shape = ee.FeatureCollection('path/SHP');
 
-// Imprimir (mostrar) en la consola la informaciÛn de la variable "shape"
+// Imprimir (mostrar) en la consola la informaci√≥n de la variable "shape"
 print(shape);
 
 // ********************************************************************************
@@ -28,11 +28,11 @@ print(shape);
 // Click en Properties
 // Asignar fecha en el atributo system:time_start en el formato yyyy-mm-dd (fecha de la captura de la imagen)
 // Click en OK
-// En la pestaÒa Tasks aparecer· el estado del archivo de imagen subido
+// En la pesta√±a Tasks aparecer√° el estado del archivo de imagen subido
 // ********************************************************************************
 
 // Guardar imagen en una variable "raster"
-var raster = ee.Image('users/dmlmont/Taller_GEE/Raster');
+var raster = ee.Image('path/Raster');
 
-// Imprimir (mostrar) en la consola la informaciÛn de la variable "raster"
+// Imprimir (mostrar) en la consola la informaci√≥n de la variable "raster"
 print(raster);
