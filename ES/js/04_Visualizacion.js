@@ -1,12 +1,12 @@
 // ********************************************************************************
-// VISUALIZACI覰
+// VISUALIZACI脫N
 // ********************************************************************************
-// Todos los objetos espaciales (Im醙enes y shapes) pueden visualizarse en el mapa
+// Todos los objetos espaciales (Im谩genes y shapes) pueden visualizarse en el mapa
 // El mapa tiene por defecto el nombre de variable "Map"
 // ********************************************************************************
 
 // Traemos un shapefile
-var shape = ee.FeatureCollection("users/dmlmont/Taller_GEE_Univalle/SHP");
+var shape = ee.FeatureCollection("path/SHP");
 
 // Traemos una imagen Sentinel-2
 var s2 = ee.ImageCollection("COPERNICUS/S2")
@@ -15,41 +15,41 @@ var s2 = ee.ImageCollection("COPERNICUS/S2")
   .first();
 
 // ********************************************************************************
-// OPCIONES DE VISUALIZACI覰
+// OPCIONES DE VISUALIZACI脫N
 // ********************************************************************************
-// La visualizaci髇 depende de las opciones dadas
+// La visualizaci贸n depende de las opciones dadas
 // Las opciones pueden variar dependiendo de la imagen o shape
 // ********************************************************************************
 
 // ********************************************************************************
-// OPCIONES B罶ICAS DE VISUALIZACI覰 DE SHAPES
+// OPCIONES B脕SICAS DE VISUALIZACI脫N DE SHAPES
 // ********************************************************************************
-// color: "C骴igo HEX de un color"
-// strokeWidth: "Grosor de la l韓ea en pixeles"
+// color: "C贸digo HEX de un color"
+// strokeWidth: "Grosor de la l铆nea en pixeles"
 // ********************************************************************************
 
-// Visualizaci髇 de shape en color rojo con grosor de l韓ea 5
+// Visualizaci贸n de shape en color rojo con grosor de l铆nea 5
 var shape_options = {
   color:'FF0000',
   strokeWidth: 5
 };
 
 // ********************************************************************************
-// OPCIONES B罶ICAS DE VISUALIZACI覰 DE IM罣ENES
+// OPCIONES B脕SICAS DE VISUALIZACI脫N DE IM脕GENES
 // ********************************************************************************
-// min: "Valor m韓imo de la imagen a visualizar (por lo general es cero)"
-// max: "Valor m醲imo de la imagen a visualizar (no tiene que ser el m醲imo)"
+// min: "Valor m铆nimo de la imagen a visualizar (por lo general es cero)"
+// max: "Valor m谩ximo de la imagen a visualizar (no tiene que ser el m谩ximo)"
 // bands: "Lista de bandas para componer"
 // ********************************************************************************
 
-// Visualizaci髇 de imagen en valores de 0 a 3000 de las bandas visibles de Sentinel-2
+// Visualizaci贸n de imagen en valores de 0 a 3000 de las bandas visibles de Sentinel-2
 var s2_options_RGB = {
   min: 0,
   max: 3000,
   bands: ["B4","B3","B2"]
 };
 
-// Visualizaci髇 de imagen en valores de 0 a 5000 de las bandas NIR, Rojo y Azul de Sentinel-2
+// Visualizaci贸n de imagen en valores de 0 a 5000 de las bandas NIR, Rojo y Azul de Sentinel-2
 var s2_options_NIR = {
   min: 0,
   max: 5000,
@@ -59,9 +59,9 @@ var s2_options_NIR = {
 // ********************************************************************************
 // ADICIONAR OBJETOS AL MAPA
 // ********************************************************************************
-// Los objetos se adicionan con la funci髇 .addLayer("Objeto","Opciones de visualizaci髇","Nombre de Layer")
+// Los objetos se adicionan con la funci贸n .addLayer("Objeto","Opciones de visualizaci贸n","Nombre de Layer")
 // Se pueden adicionar varios objetos al mapa
-// El orden de visualizaci髇 es igual al orden de adici髇
+// El orden de visualizaci贸n es igual al orden de adici贸n
 // ********************************************************************************
 
 // Adicionar imagen Sentinel-2 en RGB
@@ -74,6 +74,6 @@ Map.addLayer(s2,s2_options_NIR,"SENTINEL-2 NIR");
 Map.addLayer(shape,shape_options,"SHAPEFILE");
 
 // Centrar el mapa en el ojeto shapefile
-// Tambi閚 puede centrarse en una imagen
-// Se utiliza la funci髇 .centerObject("Objeto")
+// Tambi茅n puede centrarse en una imagen
+// Se utiliza la funci贸n .centerObject("Objeto")
 Map.centerObject(shape);
