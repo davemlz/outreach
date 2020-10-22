@@ -1,4 +1,9 @@
 // ********************************************************************************
+// LINK A ESTE SCRIPT:
+// https://code.earthengine.google.com/825130564c644b63fb96e0335b4c5d4f
+// ********************************************************************************
+
+// ********************************************************************************
 // SERIES DE TIEMPO
 // ********************************************************************************
 // Las series de tiempo se construyen en gráficos que pueden exportarse como tal o como tablas
@@ -7,7 +12,7 @@
 // ********************************************************************************
 
 // Traemos un shape
-var shape = ee.FeatureCollection("path/SHP");
+var shape = ee.FeatureCollection("users/dmlmont/Taller_GEE_Univalle/SHP");
 
 // Se imprime el shape en la consola para ver sus columnas
 // En Series de tiempo por región es necesario
