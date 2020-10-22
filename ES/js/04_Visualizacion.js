@@ -1,4 +1,14 @@
 // ********************************************************************************
+// LINK A ESTE SCRIPT:
+// https://code.earthengine.google.com/4922ebd0f43f2e6d04e843bb4783b658
+// ********************************************************************************
+
+// ********************************************************************************
+// LINK AL DATASET:
+// https://code.earthengine.google.com/?asset=users/dmlmont/Taller_GEE_Univalle/SHP
+// ********************************************************************************
+
+// ********************************************************************************
 // VISUALIZACIÓN
 // ********************************************************************************
 // Todos los objetos espaciales (Imágenes y shapes) pueden visualizarse en el mapa
@@ -6,7 +16,7 @@
 // ********************************************************************************
 
 // Traemos un shapefile
-var shape = ee.FeatureCollection("path/SHP");
+var shape = ee.FeatureCollection("users/dmlmont/Taller_GEE_Univalle/SHP");
 
 // Traemos una imagen Sentinel-2
 var s2 = ee.ImageCollection("COPERNICUS/S2")
