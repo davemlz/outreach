@@ -7,7 +7,7 @@ I have used for multiple workshops, conferences and courses. Enjoy!
 
 ### Python
 
-- `2021-GeoPythonConf`: [eemont: A Python Package that extends Google Earth Engine]()
+- `2021-GeoPythonConf`: [eemont: A Python Package that extends Google Earth Engine](https://github.com/davemlz/gee-workshop/tree/master/EN/python/2021-GeoPythonConf)
 - `2021-Universitat-Leipzig`: [Introduction to Google Earth Engine: Mapping Water Bodies in Leipzig](https://github.com/davemlz/gee-workshop/tree/master/EN/python/2021-Universitat-Leipzig)
 
 ## Español (ES)
