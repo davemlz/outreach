@@ -1,17 +1,18 @@
 # Google Earth Engine Workshops
 
-This repository contains material that I have used for multiple workshops, conferences and
-courses. Feel free to surf through it!
+Hey, Google Earth Engine enthusiasts! This repository contains the material that 
+I have used for multiple workshops, conferences and courses. Enjoy!
 
-## Español (es)
-
-### JavaScript
-
-- `2019-Universidad-del-Valle`: [Introducción a Google Earth Engine]()
-
-## English (en)
+## English (EN)
 
 ### Python
 
 - `2021-GeoPythonConf`: [eemont: A Python Package that extends Google Earth Engine]()
-- `2021-Universitat-Leipzig`: [Introduction to Google Earth Engine: Mapping Water Bodies in Leipzig]()
+- `2021-Universitat-Leipzig`: [Introduction to Google Earth Engine: Mapping Water Bodies in Leipzig](https://github.com/davemlz/gee-workshop/tree/master/EN/python/2021-Universitat-Leipzig)
+
+## Español (ES)
+
+### JavaScript
+
+- `2019-Universidad-del-Valle`: [Introducción a Google Earth Engine](https://github.com/davemlz/gee-workshop/tree/master/ES/js/2019-Universidad-del-Valle)
+
