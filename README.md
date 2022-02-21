@@ -14,5 +14,6 @@ I have used for multiple workshops, conferences and courses. Enjoy!
 
 ### JavaScript
 
+- `2022-Universidad-del-Valle`: [Spectral Indices en Google Earth Engine](https://github.com/davemlz/gee-workshop/tree/master/ES/js/2022-Universidad-del-Valle)
 - `2021-MasterGISDays`: [Procesamiento y Visualización de Datos Geoespaciales con Google Earth Engine](https://github.com/davemlz/gee-workshops/tree/master/ES/js/2021-MasterGISDays)
 - `2019-Universidad-del-Valle`: [Introducción a Google Earth Engine](https://github.com/davemlz/gee-workshop/tree/master/ES/js/2019-Universidad-del-Valle)
