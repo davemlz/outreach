@@ -6,7 +6,7 @@ Taller: Spectral Indices en Google Earth Engine
 
 David Montero Loaiza
 
-Link: https://code.earthengine.google.com/d36e62a13136ac32497443dd9f679d0e
+Link: https://code.earthengine.google.com/5e3c70fd06296082e66637b1bed24623
 --------------------
 
 PARTE 1: SPECTRAL INDICES A MANO
@@ -200,7 +200,7 @@ Conocimientos a adquirir:
 - Opciones de visualizacion basicas
 */
 
-// SELECCIONAMOS VICHADA DE LA BASE DE DATOS DE LA FAO
+// SELECCIONAMOS COLOMBIA DE LA BASE DE DATOS DE LA FAO
 var colombia = ee.FeatureCollection("FAO/GAUL/2015/level0")
   .filter(ee.Filter.eq("ADM0_NAME","Colombia"));
 
@@ -210,14 +210,14 @@ Map.centerObject(colombia);
 
 // ACCEDEMOS AL DATASET DE MODIS
 var MOD = ee.ImageCollection("MODIS/006/MCD43A4")
-  .filterBounds(colombia) // FILTRAMOS POR INTERSECCION CON VICHADA
+  .filterBounds(colombia) // FILTRAMOS POR INTERSECCION CON COLOMBIA
   .filterDate("2021-01-01","2022-01-02") // FILTRAMOS POR FECHA
   .median() // HACEMOS UNA COMPOSICION DE MEDIANA
   .clipToBoundsAndScale({
     geometry: colombia,
     scale: 5000
-  }) // CORTAMOS EL RASTER A LA EXTENSION DE VICHADA Y RE-ESCALAMOS
-  .clip(colombia) // CORTAMOS EL RASTER CON EL VECTOR DE VICHADA
+  }) // CORTAMOS EL RASTER A LA EXTENSION DE COLOMBIA Y RE-ESCALAMOS
+  .clip(colombia) // CORTAMOS EL RASTER CON EL VECTOR DE COLOMBIA
   .multiply(0.0001); // ESCALAMOS LA IMAGEN PARA CAMBIAR EL TIPO DE DATO (DATATYPE)
   
 // AGREGAMOS MODIS AL MAPA EN RGB
