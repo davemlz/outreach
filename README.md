@@ -19,5 +19,5 @@ I have used for multiple workshops, conferences and courses. Enjoy!
 | Nombre      | Carpeta     | Presentación  | Adicional  |
 | :---        |    :----:   |    :----:     |    :----:  |
 | Spectral Indices en Google Earth Engine | [`2022-Universidad-del-Valle`](https://github.com/davemlz/gee-workshop/tree/master/ES/js/2022-Universidad-del-Valle) |   |   |
-| Procesamiento y Visualización de Datos Geoespaciales con Google Earth Engine | [`2021-MasterGISDays`](https://github.com/davemlz/gee-workshops/tree/master/ES/js/2021-MasterGISDays) |   |   |
+| Procesamiento y Visualización de Datos Geoespaciales con Google Earth Engine | [`2021-MasterGISDays`](https://github.com/davemlz/gee-workshops/tree/master/ES/js/2021-MasterGISDays) | <a href="https://github.com/davemlz/spyndex"><img src="https://raw.githubusercontent.com/davemlz/gee-workshops/_static/pdf-file.png" alt="PDF" height="100"></a>   |   |
 | Introducción a Google Earth Engine | [`2019-Universidad-del-Valle`](https://github.com/davemlz/gee-workshop/tree/master/ES/js/2019-Universidad-del-Valle) |   |   |
