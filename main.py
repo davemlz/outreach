@@ -43,9 +43,9 @@ for talkType in ["talk","lightning talk","workshop","poster"]:
             if "pdf" in attributes.keys():
                 link_pdf = link + '/' + attributes['pdf']
                 text.append(f'<a href="{link_pdf}" target="_blank">{imgs["pdf"]}</a>')
-            elif "google_slides" in attributes.keys():
+            if "google_slides" in attributes.keys():
                 text.append(f'<a href="{attributes["google_slides"]}" target="_blank">{imgs["google_slides"]}</a>')
-            elif "youtube" in attributes.keys():
+            if "youtube" in attributes.keys():
                 text.append(f'<a href="{attributes["youtube"]}" target="_blank">{imgs["youtube"]}</a>')
             text.append('</td>')
             text.append('</tr>\n')
