@@ -37,7 +37,7 @@ for talkType in ["talk","lightning talk","workshop","poster"]:
             link = f"https://github.com/davemlz/outreach/tree/master/{attributes['language'].upper()}/{attributes['folder']}"
             name = attributes['name']
             text.append(f'<tr><td><a href="{link}" target="_blank">{name}</a></td>')
-            text.append(f'<td>{flags[attributes["event"]]}</td>')
+            text.append(f'<td>{attributes["event"]}</td>')
             text.append(f'<td>{flags[attributes["language"]]}</td>')
             text.append('<td>')
             if "pdf" in attributes.keys():
