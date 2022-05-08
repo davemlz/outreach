@@ -71,5 +71,14 @@
         "pdf": "Earth Engine @ SG Virtual Meetup - David Montero Loaiza.pdf",
         "google_slides": "https://docs.google.com/presentation/d/1hFCqqDHlJXnoUtnvaEesPD-pEyG-Z1HnS-j9hha2gdQ/edit?usp=sharing",
         "youtube": "https://youtu.be/bt4k7fAAlEI?t=997"
+    },
+    "LPS2022": {
+        "folder": "2022-LPS22",
+        "name": "Sentinel-2 potential for Gross Primary Production estimation in forests by considering memory effects",
+        "language": "en",
+        "event": "Living Planet Symposium",
+        "event_type": "poster",
+        "pdf": "LPS22.pdf",
+        "google_slides": "https://docs.google.com/presentation/d/191U1SgvGvgIxRj7K6xVoFDOS9V9ozmDUbCKosnAlONA/edit?usp=sharing"
     }
 }
