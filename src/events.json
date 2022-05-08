@@ -3,7 +3,7 @@
         "folder": "2019-Universidad-del-Valle",
         "name": "Introducción a Google Earth Engine",
         "language": "es",
-        "event": "Remote Sensing Course",
+        "event": "Universidad del Valle: Remote Sensing Course",
         "event_type": "workshop",
         "programming_language": "js"
     },
@@ -22,7 +22,7 @@
         "folder": "2022-Universidad-del-Valle",
         "name": "Spectral Indices en Google Earth Engine",
         "language": "es",
-        "event": "Remote Sensing Course",
+        "event": "Universidad del Valle: Remote Sensing Course",
         "event_type": "workshop",
         "programming_language": "js"
     },
@@ -58,7 +58,7 @@
         "folder": "2021-Universitat-Leipzig",
         "name": "Introduction to Google Earth Engine: Mapping Water Bodies in Leipzig",
         "language": "en",
-        "event": "Remote Sensing Course",
+        "event": "Universität Leipzig: Remote Sensing Course",
         "event_type": "workshop",
         "programming_language": "py"
     },
@@ -76,7 +76,7 @@
         "folder": "2022-LPS22",
         "name": "Sentinel-2 potential for Gross Primary Production estimation in forests by considering memory effects",
         "language": "en",
-        "event": "Living Planet Symposium",
+        "event": "Living Planet Symposium 2022",
         "event_type": "poster",
         "pdf": "LPS22.pdf",
         "google_slides": "https://docs.google.com/presentation/d/191U1SgvGvgIxRj7K6xVoFDOS9V9ozmDUbCKosnAlONA/edit?usp=sharing"
