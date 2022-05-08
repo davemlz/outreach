@@ -19,7 +19,7 @@ def filterByTalkType():
 letters = list(map(chr, range(65, 91)))
 
 flags = {
-    "en": '<img src="https://raw.githubusercontent.com/davemlz/outreach/master/_static/united-kingdom.png" alt="EN" height="30">'
+    "en": '<img src="https://raw.githubusercontent.com/davemlz/outreach/master/_static/united-kingdom.png" alt="EN" height="30">',
     "es": '<img src="https://raw.githubusercontent.com/davemlz/outreach/master/_static/spain.png" alt="ES" height="30">'
 }
 
