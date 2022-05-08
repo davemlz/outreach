@@ -1,6 +1,6 @@
-# Google Earth Engine Workshops
+# Outreach Activities
 
-Hey, Google Earth Engine enthusiasts! This repository contains the material that 
+Hey, geospatial enthusiasts! This repository contains the material that 
 I have used for multiple workshops, conferences and courses. Enjoy!
 
 ## English (EN) :uk:
