@@ -32,6 +32,7 @@ imgs = {
 text = []
 for talkType in ["talk","lightning talk","workshop","poster"]:
     text.append(f"\n## {talkType.capitalize()}\n\n<table>")
+    text.append('<tr><th> Name </th><th> Event </th><th> Language </th><th> Resources </th></tr>')
     for event, attributes in data.items():        
         if attributes['event_type'] == talkType:
             link = f"https://github.com/davemlz/outreach/tree/master/{attributes['language'].upper()}/{attributes['folder']}"
