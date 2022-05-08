@@ -3,14 +3,16 @@
         "folder": "2019-Universidad-del-Valle",
         "name": "Introducción a Google Earth Engine",
         "language": "es",
-        "event": "workshop",
+        "event": "Remote Sensing Course",
+        "event_type": "workshop",
         "programming_language": "js"
     },
     "MASTERGISDAYS2021": {
         "folder": "2021-MasterGISDays",
         "name": "Procesamiento y Visualización de Datos Geoespaciales con Google Earth Engine",
         "language": "es",
-        "event": "workshop",
+        "event": "MasterGIS Days 2021",
+        "event_type": "workshop",
         "programming_language": "js",
         "pdf": "2021-MasterGISDays.pdf",
         "google_slides": "https://docs.google.com/presentation/d/1pkVIzTmn6Pr3s_tpdg1BsIEVKkI3fPP50tkcT6KAPnY/edit?usp=sharing",
@@ -20,14 +22,16 @@
         "folder": "2022-Universidad-del-Valle",
         "name": "Spectral Indices en Google Earth Engine",
         "language": "es",
-        "event": "workshop",
+        "event": "Remote Sensing Course",
+        "event_type": "workshop",
         "programming_language": "js"
     },
     "GEOFORGOOD2020": {
         "folder": "2020-GeoForGood",
         "name": "Water storage retrieval using Sentinel-2 and bathymetric data",
         "language": "en",
-        "event": "lightning talk",
+        "event": "GeoForGood Summit 2020",
+        "event_type": "lightning talk",
         "pdf": "2020-GeoForGood.pdf",
         "google_slides": "https://docs.google.com/presentation/d/1PtxtXL0CfijlDfT5OrADN2stXlCqUHsOn8yqJ0n6fq0/edit?usp=sharing",
         "youtube": "https://youtu.be/CbHYkUpCwCI?t=2730"
@@ -36,7 +40,8 @@
         "folder": "2021-GeoForGood",
         "name": "eemont: A Python Package that extends Google Earth Engine",
         "language": "en",
-        "event": "lightning talk",
+        "event": "GeoForGood Summit 2021",
+        "event_type": "lightning talk",
         "pdf": "2021-GeoForGood.pdf",
         "google_slides": "https://docs.google.com/presentation/d/1xUZ3-hRJpZMHBNjQhdQMs2sN5ryRMdJVDJo6dJCJj2A/edit?usp=sharing&resourcekey=0-HLG-8E3CUf7Vmofd3zWBWg"
     },
@@ -44,7 +49,8 @@
         "folder": "2021-GeoPythonConf",
         "name": "eemont: A Python Package that extends Google Earth Engine",
         "language": "en",
-        "event": "talk",
+        "event": "GeoPython Conference 2021",
+        "event_type": "talk",
         "pdf": "GeoPythonConf2021-eemont.pdf",
         "google_slides": "https://docs.google.com/presentation/d/1b1LPTpxtPek6s_iT04cFlobDERGgi-uGzT-Sm5D2fXA/edit?usp=sharing"
     },
@@ -52,14 +58,16 @@
         "folder": "2021-Universitat-Leipzig",
         "name": "Introduction to Google Earth Engine: Mapping Water Bodies in Leipzig",
         "language": "en",
-        "event": "workshop",
+        "event": "Remote Sensing Course",
+        "event_type": "workshop",
         "programming_language": "py"
     },
     "EARTHENGINESG2022": {
         "folder": "2022-EarthEngineSG",
         "name": "Open-source projects for Earth Engine in Python, R, JavaScript and Julia",
         "language": "en",
-        "event": "lightning talk",
+        "event": "EarthEngine@SG Meetup",
+        "event_type": "lightning talk",
         "pdf": "Earth Engine @ SG Virtual Meetup - David Montero Loaiza.pdf",
         "google_slides": "https://docs.google.com/presentation/d/1hFCqqDHlJXnoUtnvaEesPD-pEyG-Z1HnS-j9hha2gdQ/edit?usp=sharing",
         "youtube": "https://youtu.be/bt4k7fAAlEI?t=997"
