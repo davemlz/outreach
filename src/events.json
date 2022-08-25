@@ -80,5 +80,14 @@
         "event_type": "poster",
         "pdf": "LPS22.pdf",
         "google_slides": "https://docs.google.com/presentation/d/191U1SgvGvgIxRj7K6xVoFDOS9V9ozmDUbCKosnAlONA/edit?usp=sharing"
+    },
+    "FOSS4G2022": {
+        "folder": "2022-FOSS4G",
+        "name": "spectral: Awesome Spectral Indices for the Google Earth Engine JavaScript API",
+        "language": "en",
+        "event": "FOSS4G 2022",
+        "event_type": "talk",
+        "pdf": "FOSS4G2022_Spectral.pdf",
+        "google_slides": "https://docs.google.com/presentation/d/1d5NWJEFdLcGRzaXx1K2h56K62JA_ZBJFHabLy2mEPj8/edit?usp=sharing&resourcekey=0-F1XFJbmanLrEgriIUBO2hw"
     }
 }
