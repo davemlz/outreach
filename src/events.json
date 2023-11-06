@@ -89,5 +89,14 @@
         "event_type": "talk",
         "pdf": "FOSS4G2022_Spectral.pdf",
         "google_slides": "https://docs.google.com/presentation/d/1d5NWJEFdLcGRzaXx1K2h56K62JA_ZBJFHabLy2mEPj8/edit?usp=sharing&resourcekey=0-F1XFJbmanLrEgriIUBO2hw"
+    },
+    "EGEA_SCICON2023": {
+        "folder": "2023-EGEA-SCICON",
+        "name": "Gross Primary Production from Above: Remote Sensing & Digital Forest",
+        "language": "en",
+        "event": "EGEA SciCon 2023",
+        "event_type": "talk",
+        "pdf": "SciCon23_2023-11-03.pdf",
+        "google_slides": "https://docs.google.com/presentation/d/1IjS8Kbr19yLtkFXxo2QB8_1mb6ozK1xx1sebjkoeFfc/edit?usp=sharing"
     }
 }
