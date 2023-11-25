@@ -98,5 +98,15 @@
         "event_type": "talk",
         "pdf": "SciCon23_2023-11-03.pdf",
         "google_slides": "https://docs.google.com/presentation/d/1IjS8Kbr19yLtkFXxo2QB8_1mb6ozK1xx1sebjkoeFfc/edit?usp=sharing"
+    },
+    "MASTERGISDAYS2023": {
+        "folder": "2023-MasterGISDays",
+        "name": "Procesamiento y Visualización de Datos Geoespaciales con Google Earth Engine",
+        "language": "es",
+        "event": "MasterGIS Days 2023",
+        "event_type": "workshop",
+        "programming_language": "js",
+        "pdf": "MasterGISDays2023.pdf",
+        "youtube": "https://youtu.be/96ASUMZFMxc?list=PLjHRAtOKOOLgHEGc9JmHDwm3rvoIgoXzH&t=1465"
     }
 }
